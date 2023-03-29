@@ -9,7 +9,7 @@ const OrderedProducts = () => {
         const getProducts = async () =>{
             setLoading(true);
             const abs = JSON.parse(localStorage.getItem('userId'));
-            const response = await fetch(`http://localhost:9090/order/${abs}/getOrders`)
+            const response = await fetch(`http://shopsavvy-env.eba-dg3qdgp9.ap-south-1.elasticbeanstalk.com/order/${abs}/getOrders`)
             setOrder(await response.json());
             setLoading(false);
         }

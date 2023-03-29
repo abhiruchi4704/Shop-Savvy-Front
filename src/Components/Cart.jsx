@@ -10,7 +10,7 @@ const Cart = (props) => {
         const getProducts = async () =>{
             setLoading(true);
             const abs = JSON.parse(localStorage.getItem('userId'));
-            const response = await fetch(`http://localhost:9090/cart/${abs}/getCart`)
+            const response = await fetch(`http://shopsavvy-env.eba-dg3qdgp9.ap-south-1.elasticbeanstalk.com/cart/${abs}/getCart`)
             setProduct(await response.json());
             setLoading(false);
         }
@@ -18,14 +18,14 @@ const Cart = (props) => {
     },[])
     const placingOrder = async ()=>{
       const abs = JSON.parse(localStorage.getItem('userId'));
-      const response = await fetch(`http://localhost:9090/order/${abs}/createOrder`);
+      const response = await fetch(`http://shopsavvy-env.eba-dg3qdgp9.ap-south-1.elasticbeanstalk.com/order/${abs}/createOrder`);
       console.log(response.data);
       props.history.push("/orderedProducts");
       
     }
     const removingItemfromCart = async (prodaId) =>{
       const abs = JSON.parse(localStorage.getItem('userId'));
-      const response = await fetch(`http://localhost:9090/cart/${abs}/remove/${prodaId}`);
+      const response = await fetch(`http://shopsavvy-env.eba-dg3qdgp9.ap-south-1.elasticbeanstalk.com/cart/${abs}/remove/${prodaId}`);
       window.location.reload(false);
       console.log(response.data);
     }

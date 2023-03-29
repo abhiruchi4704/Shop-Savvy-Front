@@ -11,7 +11,7 @@ const Product = (props) => {
     useEffect(()=>{
         const getProduct = async () =>{
             setLoading(true);
-            const response = await fetch(`http://localhost:9090/products/getById/${productId}`);
+            const response = await fetch(`http://shopsavvy-env.eba-dg3qdgp9.ap-south-1.elasticbeanstalk.com/products/getById/${productId}`);
             setProduct(await response.json());
             setLoading(false);
         }
@@ -37,7 +37,7 @@ const Product = (props) => {
     }
     const addingToCart = ()=>{
         const abs = JSON.parse(localStorage.getItem('userId'));
-        axios.post(`http://localhost:9090/cart/${abs}/add/${productId}`)
+        axios.post(`http://shopsavvy-env.eba-dg3qdgp9.ap-south-1.elasticbeanstalk.com/cart/${abs}/add/${productId}`)
         alert("Product added to cart successfully.")
         props.history.push("/cart");
     }

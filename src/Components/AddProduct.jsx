@@ -12,7 +12,7 @@ const AddProduct = (props) => {
       });
       const addingProduct = (e) => {
         e.preventDefault(e);
-         axios.post("http://localhost:9090/products/addProduct", {
+         axios.post("http://shopsavvy-env.eba-dg3qdgp9.ap-south-1.elasticbeanstalk.com/products/addProduct", {
           category: product.category,
           details: product.details,
           name: product.name,

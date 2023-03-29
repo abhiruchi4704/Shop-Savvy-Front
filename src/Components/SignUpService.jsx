@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const URL = "http://localhost:9090/signup";
+const URL = "http://shopsavvy-env.eba-dg3qdgp9.ap-south-1.elasticbeanstalk.com/signup";
 
 class SignUpService{
     saveUser(user){

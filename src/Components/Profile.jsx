@@ -34,7 +34,7 @@ export default function Profile(props) {
     const getUserProfile = async () => {
       setLoading(true);
       const abs = JSON.parse(localStorage.getItem("userId"));
-      const response = await fetch(`http://localhost:9090/getprofile/${abs}`);
+      const response = await fetch(`http://shopsavvy-env.eba-dg3qdgp9.ap-south-1.elasticbeanstalk.com/getprofile/${abs}`);
       console.log(response.data);
       if (componentMounted) {
         setData(await response.clone().json());
@@ -53,7 +53,7 @@ export default function Profile(props) {
     e.preventDefault(e);
     const abs = JSON.parse(localStorage.getItem("userId"));
     const response = axios
-      .post("http://localhost:9090/updateProfile", {
+      .post("http://shopsavvy-env.eba-dg3qdgp9.ap-south-1.elasticbeanstalk.com/updateProfile", {
         userID: abs,
         name: data.name,
         email: data.email,

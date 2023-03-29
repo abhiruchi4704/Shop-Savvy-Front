@@ -11,7 +11,7 @@ const Products = () => {
     useEffect(() =>{
         const getProducts = async () =>{
             setLoading(true);
-            const response = await fetch("http://localhost:9090/products")
+            const response = await fetch("http://shopsavvy-env.eba-dg3qdgp9.ap-south-1.elasticbeanstalk.com/products")
             console.log(response.data)
             if(componentMounted){
                 setData(await response.clone().json());

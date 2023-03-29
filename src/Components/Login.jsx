@@ -9,7 +9,7 @@ function Login(props) {
   });
   const loginApi = (e) => {
     e.preventDefault(e);
-     axios.post("http://localhost:9090/login", {
+     axios.post("http://shopsavvy-env.eba-dg3qdgp9.ap-south-1.elasticbeanstalk.com/login", {
       email: Users.email,
       password: Users.password,
     })
