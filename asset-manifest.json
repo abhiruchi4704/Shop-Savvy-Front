@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Shop-Savvy-Front/static/css/main.b65db95c.css",
-    "main.js": "/Shop-Savvy-Front/static/js/main.c72c2e12.js",
+    "main.js": "/Shop-Savvy-Front/static/js/main.dffce55c.js",
     "static/js/787.22edae46.chunk.js": "/Shop-Savvy-Front/static/js/787.22edae46.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/Shop-Savvy-Front/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/Shop-Savvy-Front/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -11,11 +11,11 @@
     "static/media/draw2.avif": "/Shop-Savvy-Front/static/media/draw2.bbc1fd265b4e35e8d86d.avif",
     "index.html": "/Shop-Savvy-Front/index.html",
     "main.b65db95c.css.map": "/Shop-Savvy-Front/static/css/main.b65db95c.css.map",
-    "main.c72c2e12.js.map": "/Shop-Savvy-Front/static/js/main.c72c2e12.js.map",
+    "main.dffce55c.js.map": "/Shop-Savvy-Front/static/js/main.dffce55c.js.map",
     "787.22edae46.chunk.js.map": "/Shop-Savvy-Front/static/js/787.22edae46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b65db95c.css",
-    "static/js/main.c72c2e12.js"
+    "static/js/main.dffce55c.js"
   ]
 }
